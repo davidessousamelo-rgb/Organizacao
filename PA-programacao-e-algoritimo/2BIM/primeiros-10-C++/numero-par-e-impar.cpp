@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numero;
+    int somaPar = 0;
+    int somaImpar = 0;
+
+    cout << "Digite um numero: ";
+    cin >> numero;
+
+    for(int i = 0; i <= numero; i++) {
+
+        if(i % 2 == 0) {
+
+            somaPar = somaPar + i;
+
+        } else {
+
+            somaImpar = somaImpar + i;
+        }
+    }
+
+    cout << "Soma dos pares = " << somaPar << endl;
+
+    cout << "Soma dos impares = " << somaImpar;
+
+    return 0;
+}
